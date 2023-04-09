@@ -1,16 +1,34 @@
+
 #youtubeVideo{
-    margin-left: 30%;
-    margin-right: 100%;
-    
-    }
-    body{
-        background-color: white;
-    }
-    #mainHeading{
-        margin-left: 30%;
-        margin-right: auto;
-        color: #99B6D6;
-    }
-    #button{
-        color: black;
-    }
+  margin-left: 30%;
+  margin-right: 100%;
+  
+  }
+  body{
+      background-color: white;
+  }
+  #mainHeading{
+    padding-left: 100px;
+      margin-left: 30%;
+      margin-right: auto;
+      color: #99B6D6;
+  }
+  #button{
+      color: black;
+  }
+
+#spotifyPlaylist{
+  padding-left: 565px;
+
+  }
+  body{
+      background-color: white;
+  }
+  #mainHeading{
+      margin-left: 30%;
+      margin-right: auto;
+      color: #99B6D6;
+  }
+  #button{
+      color: black;
+  }
