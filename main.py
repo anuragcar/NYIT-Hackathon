@@ -8,9 +8,8 @@ from pytube import Search
 import requests
 import json
 from flask import Flask, render_template
-import cherrypy
 
-spotify = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials(client_id='',client_secret='',))
+spotify = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials(client_id='',client_secret='',)) # removed keys for privacy, add your own
 # get spotify uri
 def getSpotify(mood):
     results = spotify.search(q=mood, type='playlist')
