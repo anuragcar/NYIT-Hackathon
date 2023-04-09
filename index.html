@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Py Test</title>
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+
+<body>
+  <script>
+    const fs = require('fs')
+    fs.readFile('spotify.txt', (err, inputD) => {
+       if (err) throw err;
+          console.log(inputD.toString());
+    })
+  </script>
+
+  <div><object youtube="youtube.txt"></object></div>
+  <div><object spotify="spotify.txt"></object></div>
+  <h1 id="mainHeading">Here is something to make you feel better</h1>
+
+  <div id="youtubeVideo">
+  <iframe width="560" height="315" src=youtube title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe style="border-radius:12px" src='spotify' width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  <p id="there">this will change</p>
+  <button onclick="myFunction()">hi there</button>
+</body>
+
+</html>
