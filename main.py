@@ -1,6 +1,7 @@
 from re import search
 import spotipy
 import sys
+import config
 from spotipy.oauth2 import SpotifyClientCredentials
 from pytube import Search
 # from google.cloud import language_v1
@@ -9,7 +10,7 @@ import requests
 import json
 from flask import Flask, render_template
 
-spotify = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials(client_id='',client_secret='',)) # removed keys for privacy, add your own
+spotify = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials(client_id=config.TOKEN,client_secret=config.SECRET_TOKEN))
 # get spotify uri
 def getSpotify(mood):
     results = spotify.search(q=mood, type='playlist')
